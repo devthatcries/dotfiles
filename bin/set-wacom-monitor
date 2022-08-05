@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xsetwacom --set "8" MapToOutput "HEAD-0"
+xsetwacom --set "14" MapToOutput "HEAD-0"

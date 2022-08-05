@@ -1,0 +1,3 @@
+#!/bin/bash
+# This only works on xorg, not wayland
+redshift -P -O 4500K
