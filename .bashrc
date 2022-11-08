@@ -15,6 +15,9 @@ export PATH=/usr/include:"$PATH"
 export PATH=/usr/sbin:"$PATH"
 # Path for user scripts
 export PATH=~/bin:"$PATH"
+# Path for Android SDK
+export PATH=/usr/lib/android-sdk/cmdline-tools/bin:"$PATH"
+export PATH=/usr/lib/android-sdk/tools:"$PATH"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
