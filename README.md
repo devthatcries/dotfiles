@@ -1,5 +1,5 @@
 # Dotfiles
-My OS's configuration files.
+Configuration files
 
 ## [How to manage your dotfiles?](https://www.atlassian.com/git/tutorials/dotfiles)
 
