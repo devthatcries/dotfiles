@@ -29,10 +29,16 @@ source ~/.gitstatus/gitstatus.prompt.sh
 PS1+='\n\[\033[1;36m\]>\[\033[0m\] '
 export PS2='\[\033[0;36m\]> '
 
-# Rust
+# Cargo - Rust package manager
 source "$HOME/.cargo/env"
 
-# NVM
+# NVM - Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# RBENV - Ruby Version Manager and Environment
+eval "$(rbenv init - bash)"
