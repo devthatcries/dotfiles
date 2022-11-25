@@ -42,3 +42,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # RBENV - Ruby Version Manager and Environment
 eval "$(rbenv init - bash)"
+
+# Teamocil completion
+complete -W "$(teamocil --list)" teamocil

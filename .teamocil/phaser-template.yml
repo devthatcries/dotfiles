@@ -1,0 +1,11 @@
+name: p3t
+windows:
+  - name: phaser3-template
+    root: ~/dev/games/phaser-template
+    layout: main-vertical
+    panes:
+      - code .
+      - commands:
+        - git status
+        - git log -n 3
+      - npm run dev

@@ -1,0 +1,11 @@
+name: p3-ed
+windows:
+  - name: phaser3-eternal-dungeon
+    root: ~/dev/games/eternal-dungeon
+    layout: main-vertical
+    panes:
+      - code .
+      - commands:
+        - git status
+        - git log -n 3
+      - npm run dev
