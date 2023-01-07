@@ -1,2 +1,2 @@
-require("andrdc.set")
 require("andrdc.remap")
+require("andrdc.set")
