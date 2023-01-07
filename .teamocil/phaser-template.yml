@@ -1,10 +1,13 @@
-name: p3t
+name: p3-ed
 windows:
-  - name: phaser3-template
+  - name: vim
     root: ~/dev/games/phaser-template
-    layout: main-vertical
     panes:
-      - code .
+      - vim .
+  - name: dir
+    root: ~/dev/games/phaser-template
+    layout: even-horizontal
+    panes:
       - commands:
         - git status
         - git log -n 3
