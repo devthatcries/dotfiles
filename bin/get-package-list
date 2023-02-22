@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Get list of packages installed on fedora
+dnf history userinstalled > ~/.installed-packages
+# Remove first line of packages list
+sed -i 1d ~/.installed-packages
