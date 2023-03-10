@@ -47,3 +47,7 @@ eval "$(rbenv init - bash)"
 
 # Teamocil completion
 complete -W "$(teamocil --list)" teamocil
+
+# SDKMAN - Java Version Manager
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
