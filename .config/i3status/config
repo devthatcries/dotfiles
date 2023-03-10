@@ -1,15 +1,32 @@
 general {
-        interval = 5
+  interval = 1
 }
 
+order += "volume master"
+order += "cpu_usage"
+order += "memory"
 order += "ethernet _first_"
 order += "tztime local"
 
+volume master {
+  format = "♪: %volume"
+  format_muted = "♪: muted(%volume)"
+}
+
+cpu_usage {
+  format = "CPU: %usage"
+} 
+
+memory {
+  memory_used_method = classical
+  format="RAM: %used/%total"
+}
+
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+  format_up = "E: %ip (%speed)"
+  format_down = "E: down"
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+  format = "%Y-%m-%d %H:%M:%S"
 }
