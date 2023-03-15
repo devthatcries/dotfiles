@@ -31,6 +31,11 @@ exec --no-startup-id xss-lock --ignore-sleep
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 # exec --no-startup-id nm-applet
 
+# Multiple Monitors
+set $monitor DisplayPort-2
+set $tv HDMI-A-0
+exec --no-startup-id xrandr --output $tv --mode 1920x1080 --right-of $monitor
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -157,6 +162,18 @@ assign [class="Blender"] $ws6
 assign [class="obs"] $ws7
 assign [class="Steam"] $ws10
 assign [class="Lutris"] $ws10
+
+# Workspace to monitor
+workspace $ws1 output $monitor
+workspace $ws2 output $monitor
+workspace $ws3 output $monitor
+workspace $ws4 output $monitor
+workspace $ws5 output $monitor
+workspace $ws6 output $monitor
+workspace $ws7 output $monitor
+workspace $ws8 output $monitor
+workspace $ws9 output $monitor
+workspace $ws10 output $tv
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
