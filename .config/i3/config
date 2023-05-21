@@ -33,8 +33,9 @@ exec --no-startup-id xss-lock --ignore-sleep
 
 # Multiple Monitors
 set $monitor DisplayPort-2
-set $tv HDMI-A-0
-exec --no-startup-id xrandr --output $tv --mode 1920x1080 --right-of $monitor
+exec --no-startup-id xrandr --output $monitor --mode 1920x1080
+# set $tv HDMI-A-0
+# exec --no-startup-id xrandr --output $tv --mode 1920x1080 --right-of $monitor
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -173,7 +174,7 @@ workspace $ws6 output $monitor
 workspace $ws7 output $monitor
 workspace $ws8 output $monitor
 workspace $ws9 output $monitor
-workspace $ws10 output $tv
+workspace $ws10 output $monitor
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

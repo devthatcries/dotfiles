@@ -13,3 +13,5 @@ alias L='cd /home/$USER/Documents/library'
 alias config='/usr/bin/git --git-dir=/home/$USER/.dotfiles/ --work-tree=/home/$USER'
 # NVIM as VIM
 alias vim='nvim'
+# Photon alias
+alias photon='/opt/photon/photon-1.0.2+3-linux.AppImage'
