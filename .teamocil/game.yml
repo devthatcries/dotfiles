@@ -1,0 +1,12 @@
+name: game
+windows:
+  - name: dir
+    root: ~/dev/games
+    layout: even-horizontal
+    panes:
+      - ls -lah
+      - ls -lah
+  - name: vim
+    root: ~/dev/games
+    panes:
+      - ls -lah
