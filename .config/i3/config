@@ -9,7 +9,7 @@ font pango:monospace 8
 #font pango:DejaVu Sans Mono 8
 
 # Wallpaper
-exec --no-startup-id feh --no-fehbg --bg-fill ~/Pictures/Wallpapers/isaac.jpg
+exec --no-startup-id feh --no-fehbg --bg-fill ~/Pictures/wallpapers/isaac.jpg
 
 # Hide borders
 for_window [class="^.*"] border pixel 1
@@ -152,8 +152,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Open to specific workspace
 assign [class="firefox"] $ws1
 assign [class="Alacritty"] $ws2
-assign [class="Godot"] $ws3
 assign [class="Code"] $ws3
+assign [class="Godot"] $ws4
 assign [class="Evince"] $ws4
 assign [class="Aseprite"] $ws6
 assign [class="Gimp"] $ws6
