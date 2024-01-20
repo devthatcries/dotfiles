@@ -1,0 +1,69 @@
+import = ["/home/andrdc/.config/alacritty/dracula.toml"]
+
+[colors.bright]
+black = "0x434758"
+blue = "0x9cc4ff"
+cyan = "0xa3f7ff"
+green = "0xddffa7"
+magenta = "0xe1acff"
+red = "0xff8b92"
+white = "0xffffff"
+yellow = "0xffe585"
+
+[colors.normal]
+black = "0x282a36"
+blue = "0x82aaff"
+cyan = "0x89ddff"
+green = "0xc3e88d"
+magenta = "0xc792ea"
+red = "0xf07178"
+white = "0xd0d0d0"
+yellow = "0xffcb6b"
+
+[colors.primary]
+background = "0x282a36"
+foreground = "0xbbc5ff"
+
+[colors.selection]
+background = "0xbbc5ff"
+text = "0x282a36"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 9.0
+
+[font.bold]
+style = "Bold"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[font.italic]
+style = "Italic"
+
+[font.normal]
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 1
+
+[scrolling]
+history = 5000
+
+[shell]
+args = ["--login"]
+program = "/bin/bash"
+
+[window]
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 6
+y = 6
