@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --ignore-sleep
 
 # Multiple Monitors
 set $monitor DisplayPort-2
-exec --no-startup-id xrandr --output $monitor --mode 1920x1080
+exec --no-startup-id xrandr --output $monitor --mode 2560x1440
 # set $tv HDMI-A-0
 # exec --no-startup-id xrandr --output $tv --mode 1920x1080 --right-of $monitor
 
@@ -215,7 +215,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Floating video
-bindsym $mod+Shift+F floating enable; resize set 590 px 333 px; sticky enable; move window to position 1325 px 740 px
+bindsym $mod+Shift+F floating enable; resize set 590 px 333 px; sticky enable; move window to position 1967 px 1105 px
 
 # Colors                border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
