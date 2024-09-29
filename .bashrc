@@ -11,8 +11,8 @@ export EDITOR=vim
 
 # include path
 export PATH=/usr/include:"$PATH"
-# sbin path
 export PATH=/usr/sbin:"$PATH"
+export PATH=/usr/local/bin:"$PATH"
 # Path for user scripts
 export PATH=~/bin:"$PATH"
 # Path for Android SDK
