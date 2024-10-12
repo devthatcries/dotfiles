@@ -250,3 +250,6 @@ exec setxkbmap us; exec ibus engine xkb:us::eng
 bindsym $mod+Control+U exec setxkbmap us; exec ibus engine xkb:us::eng
 bindsym $mod+Control+L exec setxkbmap latam; exec ibus engine xkb:es::spa
 bindsym $mod+Control+J exec setxkbmap jp; exec ibus engine anthy
+
+# Wacom tablet on boot
+exec --no-startup-id xsetwacom --set 16 Rotate half
