@@ -20,6 +20,8 @@ export PATH=/usr/lib/android-sdk/cmdline-tools/bin:"$PATH"
 export PATH=/usr/lib/android-sdk/tools:"$PATH"
 # Path for opt
 export PATH=/opt/minecraft/bin:"$PATH"
+export PATH=/opt/pycharm/bin:"$PATH"
+export PATH=/opt/idea/bin:"$PATH"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -56,3 +58,18 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/andrdc/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/andrdc/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/andrdc/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/andrdc/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
