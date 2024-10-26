@@ -1,0 +1,8 @@
+name: notes
+windows:
+  - name: obsidian
+    root: ~/Documents/notes/
+    layout: even-horizontal
+    panes:
+      - obsidian-md
+      - git status
